@@ -1,0 +1,21 @@
+body {
+  background-color: blue;
+  /* height: auto; */
+  width: 100%;
+}
+
+h1 {
+  color: white;
+}
+.container {
+  padding: 20px;
+  background-color: rgb(212, 235, 255);
+  border-radius: 5px;
+}
+
+label {
+  font-size: 14px;
+}
+input {
+  height: 32px;
+}
