@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Party</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- javascript -->
+    <script src="/script.js" defer></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main mt-5 mb-5">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="myrow col-sm-12 col-md-8 col-lg-4">
+          <div class="container">
+            <h1 class="mb-2 text-center">Register to join our online Party!</h1>
+            <form class="needs-validation" action="thank-you.html" novalidate>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="name">Name:</label>
+                  <input
+                    value=""
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="First Name"
+                    required
+                  />
+                  <div class="invalid-feedback">Tell us your name!</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="nickname">Nickname:</label>
+                  <input
+                    value=""
+                    type="text"
+                    class="form-control"
+                    id="nickname"
+                    placeholder="How we should call
+                  you"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    We need a nickname to call you
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 mt-3">
+                  <label for="form-check" class="form-check">
+                    Gender Identity:
+                    <div class="col d-flex mt-2 justify-content-between">
+                      <div class="form-check me-5">
+                        <input
+                          name="gender"
+                          type="radio"
+                          id="woman"
+                          class="form-check-input"
+                        />
+                        <label for="woman" class="form-check-label">
+                          Woman
+                        </label>
+                      </div>
+                      <div class="form-check me-5">
+                        <input
+                          name="gender"
+                          type="radio"
+                          id="man"
+                          class="form-check-input"
+                        />
+                        <label for="man" class="form-check-label"> Man </label>
+                      </div>
+                      <div class="form-check me-5">
+                        <input
+                          name="gender"
+                          type="radio"
+                          id="transgender"
+                          class="form-check-input"
+                        />
+                        <label for="transgender" class="form-check-label">
+                          Transgender
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col d-flex">
+                      <div class="form-check me-5">
+                        <input
+                          name="gender"
+                          type="radio"
+                          id="non"
+                          class="form-check-input"
+                        />
+                        <label for="non" class="form-check-label">
+                          Non-binary
+                        </label>
+                      </div>
+                      <div class="form-check ms-7">
+                        <input
+                          name="gender"
+                          type="radio"
+                          id="non"
+                          class="form-check-input"
+                          defaultChecked
+                        />
+                        <label for="non" class="form-check-label">
+                          Prefer not to say
+                        </label>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="input-group input-group-sm mb-3 mt-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="email@example.com"
+                      ref="{emailRef}"
+                      required
+                    />
+                    <span class="input-group-text">Email</span>
+                    <div class="invalid-feedback">
+                      There's no party without your contact
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="Default select example"
+                    defaultValue="which"
+                  >
+                    <option value="which">Preffered Language:</option>
+                    <option value="1">English</option>
+                    <option value="2">Portuguese</option>
+                    <option value="3">Spanish</option>
+                    <option value="4">French</option>
+                    <option value="4">German</option>
+                    <option value="4">Others...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col mt-3">
+                  <label for="age">Age or Birth year:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="age"
+                    placeholder="How old are you?"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for="genres" class="mb-1 mt-3">
+                    Preffered Musical genres:
+                  </label>
+                  <div class="d-flex justify-content-between">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="electronic"
+                      />
+                      <label for="electronic" class="form-check-label">
+                        Electronic
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="hiphop"
+                      />
+                      <label for="hiphop" class="form-check-label">
+                        Hip hop
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="pop"
+                      />
+                      <label for="pop" class="form-check-label"> Pop </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="indie"
+                      />
+                      <label for="indie" class="form-check-label">
+                        Indie
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="CHECKBOX"
+                        class="form-check-input"
+                        id="indie"
+                      />
+                      <label for="indie" class="form-check-label">
+                        House
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col mt-3">
+                  <label for="parties"
+                    >Select event you will participate:</label
+                  >
+                  <select
+                    defaultValue="friday"
+                    class="form-select form-select-sm"
+                    aria-label="Default select example"
+                    id="parties"
+                  >
+                    <option value="friday">late drinks TGIF (Friday)</option>
+                    <option value="sunday">Shake on Sunny Day (Sunday)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col mt-3">
+                  <div class="form-check form-switch">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="onOff"
+                      required
+                    />
+                    <label for="onOff" class="form-check-label">
+                      Agree to have fun!
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="d-flex justify-content-between col mt-3">
+                  <button
+                    class="btn btn-outline-secondary share-link"
+                    type="button"
+                  >
+                    Share
+                  </button>
+                  <button class="btn btn-outline-light" type="submit">
+                    I'm ready to participate!
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

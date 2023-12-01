@@ -1,0 +1,42 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBhcnR5fGVufDB8fDB8fHww");
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: white;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(28, 27, 27, 0.5);
+  border-radius: 5px;
+}
+
+label {
+  font-size: 14px;
+}
+input {
+  height: 32px;
+}
+/* SECOND PAGE */
+/* SECOND PAGE */
+/* SECOND PAGE */
+
+.thank-you {
+  background-image: url("https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBhcnR5fGVufDB8fDB8fHww");
+  height: 100vh;
+}
+
+.box {
+  background-color: rgba(28, 27, 27, 0.5);
+  padding: 30px 80px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  .myrow {
+    margin-left: -500px;
+  }
+}
