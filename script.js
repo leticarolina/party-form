@@ -9,9 +9,9 @@ Array.from(forms).forEach((form) => {
         event.preventDefault();
         event.stopPropagation();
       }
-      const nickname = document.getElementById("nickname");
-      const newNickname = document.querySelector(".new-nickname");
-      newNickname.innerHTML = nickname;
+      // const nickname = document.getElementById("nickname");
+      // const newNickname = document.querySelector(".new-nickname");
+      // newNickname.innerHTML = nickname;
       form.classList.add("was-validated");
     },
     false
