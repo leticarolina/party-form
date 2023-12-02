@@ -19,7 +19,7 @@ Array.from(forms).forEach((form) => {
 });
 
 ShareButton.addEventListener("click", () => {
-  const linkToCopy = "https://google.com";
+  const linkToCopy = "https://leticarolina.github.io/party-form/";
   navigator.clipboard.writeText(linkToCopy).then(() => {
     ShareButton.innerHTML = "Link Copied!";
   });
